@@ -65,7 +65,7 @@ int calcular_b(unsigned long page_size) {
 
 int main(int argc, char *argv[]) {
     if (argc < 4) {
-        fprintf(stderr, "Uso: %s Nmarcos tamanioMarco [--verbose] traza.txt\n", argv[0]);
+        fprintf(stderr, "Uso: %s Nmarcos tamanioMarco [--verbose] trace.txt\n", argv[0]);
         return 1;
     }
 
@@ -81,9 +81,9 @@ int main(int argc, char *argv[]) {
         arg_index++;
     }
 
-    // El último argumento siempre es el archivo de traza
+    // El último argumento siempre es el archivo de trace
     if (arg_index >= argc) {
-        fprintf(stderr, "Error: falta archivo de traza.\n");
+        fprintf(stderr, "Error: falta archivo de trace.\n");
         return 1;
     }
 
