@@ -34,5 +34,9 @@ gcc -o parte2 sim.c
 ## Ejecución
 
 ```bash
-./sim Nmarcos tamanioMarco [--verbose] traza.txt
+./parte2 <N_marcos> <tam_marco> [--verbose] <archivo_trace>
+```
+## Ejemplo de uso
+```bash
+./parte2 8 4096 --verbose trace2.txt
 ```
